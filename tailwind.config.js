@@ -9,11 +9,7 @@ export default {
       'mobile': '322px',
       'desktop': '1432px',
     },
-    extend: {
-      backgroundImage:{
-        hero_bg: "url(./src/assets/images/hero bg.png)",
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
