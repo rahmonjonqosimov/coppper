@@ -9,6 +9,7 @@ import Catalog from './pages/catalog'
 import Cart from './pages/cart'
 import Detail from './pages/detail'
 import News from './pages/news'
+import OrderThanks from './pages/order-thanks'
 
 const App:React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App:React.FC = () => {
         <Route path='/cart' element={<Cart />}/>
         <Route path='/product/:id' element={<Detail />}/>
         <Route path='/news' element={<News />}/>
+        <Route path='/order-thanks' element={<OrderThanks />}/>
       </Routes>
       <Footer/>
     </>

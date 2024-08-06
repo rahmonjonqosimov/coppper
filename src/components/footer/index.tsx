@@ -22,7 +22,7 @@ const Footer:React.FC = () => {
                                 <Link to={'/catalog'} className='text-sm text-[#fff] mb-[15px]'>Каталог</Link>
                             </li>
                             <li className='mb-[15px]'>
-                                <Link to={'/new'} className='text-sm text-[#fff] mb-[15px]'>Новости</Link>
+                                <Link to={'/news'} className='text-sm text-[#fff] mb-[15px]'>Новости</Link>
                             </li>
                             <li className='mb-[15px]'>
                                 <Link to={'/delivery'} className='text-sm text-[#fff] mb-[15px]'>Доставка</Link>

@@ -17,5 +17,6 @@ import news_3 from './images/news-3.png';
 import news_4 from './images/news-4.png';
 import news_5 from './images/news-5.png';
 import news_6 from './images/news-6.png';
+import order from './images/order.svg';
 
-export { hero_bg, logo, like, cart, user, production_1, production_2, production_3, production_4, production_5, avatar, choose_1, img, news_1, news_2, news_3, news_4, news_5, news_6 };
+export { order, hero_bg, logo, like, cart, user, production_1, production_2, production_3, production_4, production_5, avatar, choose_1, img, news_1, news_2, news_3, news_4, news_5, news_6 };

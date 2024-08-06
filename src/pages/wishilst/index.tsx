@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Products from '../../components/products';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 const Wishlist:React.FC = () => {
     const wishes = useSelector((state:any) => state.heart.value);
     const navigate = useNavigate();
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
   return (
     <>
         {

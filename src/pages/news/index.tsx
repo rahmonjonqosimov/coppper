@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { news_1, news_2, news_3, news_4, news_5, news_6 } from '../../assets';
 
 const data:{
@@ -32,6 +32,9 @@ const data:{
 ]
 
 const News:React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const newsItem: JSX.Element[] = data.map((item:{id:number, img:string}) => (
         <div key={item.id}>
                         <div className="w-full h-[210px] relative">

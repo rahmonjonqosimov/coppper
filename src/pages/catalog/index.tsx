@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useGetProductsQuery } from '../../context/api/productApi'
 import Products from '../../components/products';
 import CategoryComponent from '../../components/category';
 
 const Catalog:React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
     const [category, setCategory] = useState<string>(
         sessionStorage.getItem("category") || ""
       );

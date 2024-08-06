@@ -34,8 +34,8 @@ const Card:React.FC<{product:ProductsSchema}> = ( { product } ) => {
 
   return (
     <div className='shadow-md group rounded overflow-hidden'>
-      <div onClick={()=> navigate(`/product/${product.id}`)} className="relative h-[400px] w-full bg-[#DDDDDD] overflow-hidden">
-          <img src={product.images[0]} alt={product.title} className='w-full h-full object-contain' />
+      <div className="relative h-[400px] w-full bg-[#DDDDDD] overflow-hidden">
+          <img onClick={()=> navigate(`/product/${product.id}`)}  src={product.images[0]} alt={product.title} className='w-full h-full object-contain cursor-pointer duration-200 hover:scale-[1.04]' />
 
           <div onClick={() => handleHeartProduct(product)} className={`cursor-pointer w-8 h-8 rounded-[50%] bg-white absolute ${ isHeart ? " top-4 right-4" : "-top-10 -right-10"} duration-300 flex items-center justify-center group-hover:top-4 group-hover:right-4`}>
               {

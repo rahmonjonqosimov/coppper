@@ -1,12 +1,15 @@
 import React from 'react'
-import { cart, like, logo, user } from '../../assets'
+import { like, logo, user } from '../../assets'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { IoCartOutline } from "react-icons/io5";
+
 
 const Navbar:React.FC = () => {
   const wishes = useSelector((state:any) => state.heart.value)
+  const cart = useSelector((state:any) => state.cart.value)
   return (
-    <div className='bg-[#394C3F] pb-[40px]'>
+    <div className='bg-[#394C3F] pb-[30px] sticky top-0 z-50'>
       <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
               <Link to={'/'}>
@@ -48,8 +51,9 @@ const Navbar:React.FC = () => {
                   </Link>
                 </li>
                 <li> 
-                  <Link to={'/cart'} className='pt-10 bg-white block p-[10px]'>
-                        <img src={ cart } alt="" /> 
+                  <Link to={'/cart'} className='pt-10 bg-white block p-[10px] relative'>
+                        <IoCartOutline size={30}/>
+                       <span className='absolute top-3 left-[50%] -translate-x-[50%] text-[#E4A16F]'>{cart.length}</span>
                   </Link>
                 </li>
               </ul>
