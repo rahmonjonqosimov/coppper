@@ -265,7 +265,7 @@ const Cart: React.FC = () => {
             </div>
             <div className="w-full h-[1px] bg-[#E6E8E7]"></div>
             <div className='p-6'>
-              <button className=' w-full text-center h-[52px] btn text-white text-xl font-semibold '>Оформить заказ</button>
+              <button className=' w-full text-center h-[52px] btn text-white text-xl font-semibold '>{ loading ? "Loading" : "Оформить заказ"}</button>
             </div>
           </div>
 
